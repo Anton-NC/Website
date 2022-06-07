@@ -1,0 +1,87 @@
+
+body{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/36/Mansudae-Monument-Bow-2014.jpg");
+    background-repeat: no-repeat;
+    background-position: top; 
+    color:white;
+}
+
+
+
+.pyong{
+    text-align: center;
+}
+
+
+
+nav ul{
+    list-style: none;
+    display:flex;
+    justify-content:space-between;
+}
+nav ul a{
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+    padding:5px;
+    background-color: grey;
+    border-radius:5px;
+}
+
+nav ul a:hover{
+    background-color:lightblue;
+}
+.fundiv{
+    margin-top:10px;
+    display:flex;
+}
+
+.funfair img{
+    width:35vw;
+    height: 50vh;
+    margin-left:auto;
+}
+
+.funfair p{
+    width: 50vw;
+    font-size: 30px;
+    color:white;
+
+}
+
+.hoteldiv{
+    display:flex;
+}
+
+.hotel img{
+    width:30vw;
+    margin-left:auto;
+    height: 70vh;
+}
+
+.hotel p{
+    width:40vw;
+    font-size: 30px;
+    color: white;
+}
+.hotel{
+    color:white;
+}
+.funfair{
+    color:white;
+}
+
+@media(max-width:600px){
+    .funfair img{
+        width:45vw;
+    }
+    .funfair p{
+        width:50vw;
+    }
+    .hotel img{
+        width:50vw;
+    }
+    .hotel p{
+        width:40vw;
+    }
+}

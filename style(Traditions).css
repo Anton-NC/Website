@@ -1,0 +1,292 @@
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    
+}
+
+nav h1{
+   
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color:black;
+    font-size: 25px;
+    justify-content: center;
+    background-color: white;
+    padding:10px;
+    border-radius: 5px;
+}
+
+nav ul a:hover{
+
+    background-color: blue;
+
+}
+
+body{
+
+   background-image: url(https://live.staticflickr.com/4148/5063895084_18e1f89f8d_b.jpg); 
+   background-repeat: no-repeat;
+   background-size:contain;
+   background-size: cover;
+   
+   
+}
+
+.h1{
+    margin:auto;
+}
+
+.holidiv{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin:auto;
+    
+    
+}
+
+.holiday{
+    margin-top: 30vh;
+}
+
+
+
+.holidiv2{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin:auto;
+    
+
+}
+
+.holiday img{
+    width:30vw;
+    height: 55vh;
+    margin-left:auto;
+}
+
+
+.holiday p{
+    width: 90vh;
+    font-size: 25px;
+    margin-left: 5vh;
+    color: white;
+}
+
+
+.holiday h2{
+    margin-left: 55vh;
+    font-size: 40px;
+    color: white;
+    margin-top: 20vh
+}
+
+
+.Festidiv{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin:auto;
+    
+}
+
+.Festivals img{
+    width:35vw;
+    height: 45vh;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.Festivals p{
+    width:70vw;
+    font-size: 25px;
+    margin: auto;
+    margin-top: 5vh;
+    color:white;
+
+}
+
+.imagefestival{
+    
+    margin:auto;
+    
+}
+
+.Festivals h2{
+
+    margin:auto;
+    margin-top: 5vh;
+    font-size: 40px;
+    color:white;
+}
+
+footer ul {
+
+    list-style: none;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 80px;
+    margin: auto;
+    background-color: black;
+}
+
+
+
+footer ul a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+    justify-content: center;
+
+}
+
+
+
+ /*mobile layout*/
+ @media (max-width: 600px) {
+
+    nav ul{
+        list-style: none;
+        width: 90%;
+        justify-content: space-around;
+    }
+    
+    nav h1{
+       
+        justify-content: center;
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    nav ul a{
+        text-decoration: none;
+        color:white;
+        font-size: 20px;
+    
+    }
+
+    
+    
+     
+     .holidiv{
+        
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin:auto;
+        background-color: midnightblue;
+    }
+    
+    .holidiv2{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin:auto;
+        background-color: midnightblue;
+    
+    }
+    
+    .holiday img{
+        width:100%;
+        height: 80vh;
+        margin-left:auto;
+        margin-top:5vh;
+    }
+    
+    
+    .holiday p{
+        width: 80vh;
+        font-size: 20px;
+        margin:auto;
+        margin-top:5vh;
+        color: aliceblue
+    }
+    
+    
+    .holiday h2{
+        
+        margin: auto;
+        margin-top:5vh;
+        font-size: 40px;
+        color: aliceblue
+    }
+    
+    
+    .Festidiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin:auto;
+        background-color: midnightblue;
+    }
+    
+    .Festivals img{
+        width:50%;
+        height:45vh;
+        
+    }
+
+    .imagefestival{
+
+        margin-top:5vh;
+        display:flex;
+        flex-direction: row;
+    }
+    
+    .Festivals p{
+        
+        font-size: 20px;
+        margin:auto;
+        width: 80vh;
+        margin-top: 5vh;
+        color: aliceblue;
+    }
+    
+    .Festivals h2{
+    
+        margin: auto;
+        margin-top:5vh;
+        font-size: 40px;
+        color:aliceblue;
+    }
+    
+
+    footer ul{
+            
+            
+            width: 93%;
+            justify-content: space-around;
+            font-size: 10;
+            text-decoration: none;
+            list-style: none;
+            text-decoration-color: black;
+            
+    }
+
+    
+ }

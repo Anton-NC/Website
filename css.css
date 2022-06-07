@@ -1,0 +1,189 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+#landing-header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+    background-image: url(/assets/img/main.jpg);
+}
+.slideshow li:nth-child(2) { 
+    background-image: url(/assets/img/beach.jpg);
+    animation-delay: 7.5s; 
+    
+}
+.slideshow li:nth-child(3) { 
+    background-image: url(/assets/img/mountain.jpg);
+    animation-delay: 15s;
+}
+.slideshow li:nth-child(4) { 
+    background-image: url(/assets/img/statue_not_gov.jpg);
+    animation-delay: 22.5s; 
+}
+.slideshow li:nth-child(5) { 
+    background-image: url(/assets/img/city.jpg);
+    animation-delay: 30s; 
+}
+
+
+@keyframes imageAnimation { 
+    0% { 
+        opacity: 0; 
+        animation-timing-function: ease-in;
+    }
+    10% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    20% {
+        opacity: 1;
+        animation-timing-function: ease-in;
+    }
+    30% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+        
+
+    40% {
+        opacity: 1;
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        opacity: 0;
+        animation-timing-function: ease-out;
+    }
+
+}
+
+
+
+
+/* Dropdown Button */
+.btn {
+    display: inline-block;
+    opacity: 90%;
+    margin: 1rem;
+    color: black;
+    border: none;
+    text-decoration: none;
+  }
+
+a {
+    color: white;
+}
+
+.box {
+   z-index: 1;
+   width: 40%;
+   background-color: black;
+   opacity: 0.5;
+   padding: 1rem;
+   border-radius: 5px;
+   margin-top: 23%;
+   align-self: center;
+}
+
+p {
+    color: white;
+    font-size: smaller;
+}
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(255, 255, 255)}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .btn:hover {
+    background-color: #0b7dda;
+  }
+
+.title {
+    font-size: xx-large;
+    align-self: center;
+    color: white;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    position: absolute;
+    top: 10;
+}
+
+
+
+
+
+
+
+
+
+.navigation {
+    align-self: center;
+    padding: 2px;
+    margin-right: 50px;
+}
+
+.nav_list {
+    display: flex;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    margin-top: 3rem;
+    
+}
+
+
+.nav_list:active {
+    color: blue;
+}
+
+
+
+
+.nav_item {
+    flex-direction: column;
+}
+
+

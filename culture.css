@@ -1,0 +1,229 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+#landing-header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+    background-image: url(/assets/img/main.jpg);
+}
+.slideshow li:nth-child(2) { 
+    background-image: url(/assets/img/beach.jpg);
+    animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+    background-image: url(/assets/img/mountain.jpg);
+    animation-delay: 20s;
+}
+.slideshow li:nth-child(4) { 
+    background-image: url(/assets/img/statue_not_gov.jpg);
+    animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+    background-image: url(/assets/img/city.jpg);
+    animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+    0% { 
+        opacity: 0; 
+        animation-timing-function: ease-in;
+    }
+    10% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    20% {
+        opacity: 1;
+        animation-timing-function: ease-in;
+    }
+    30% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+        
+
+    40% {
+        opacity: 1;
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        opacity: 0;
+        animation-timing-function: ease-out;
+    }
+
+}
+
+
+
+
+/* Dropdown Button */
+.btn {
+    opacity: 95%;
+    padding: 1rem;
+    margin: 1rem;
+    color: black;
+  }
+  
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .btn:hover, .dropdown:hover .btn  {
+    background-color: #0b7dda;
+  }
+
+.title {
+    font-size: xx-large;
+    align-self: center;
+    color: white;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    position: absolute;
+    top: 10;
+}
+
+
+
+.food {
+    margin-top: 100px;
+    font-size: x-large;
+    padding: 10%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: -10%;
+    top: 110%;
+}
+.food_stuff1 {
+    margin-left: 5%;
+} 
+
+
+
+.flag_img {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+.navigation {
+    align-self: center;
+    padding: 2px;
+}
+
+.nav_list {
+    display: flex;
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    margin-top: 3rem;
+    
+}
+
+
+.nav_list:active {
+    color: blue;
+}
+
+
+.nav_item {
+    flex-direction: column;
+}
+
+
+/* .all_food{
+    width: 75%;
+    height: 75%;
+    position:absolute;
+    top: 800%;
+    right: 45%; */
+
+
+.box {
+    align-self: center;
+    width: 40%;
+    z-index: 1;
+    background: black;
+    opacity: 0.6;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+p {
+    opacity: 1;
+    color: white;
+}
+/* .kimichi.desc{
+    position: absolute;
+    top: 202%;
+    color: black;
+    width: 25rem;
+    right: -11%;
+}
+.kimchi{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    border-radius: 50%;
+}
+.food_stuff1{
+    position: absolute;
+    top: 150%;
+    width: 15rem;
+    font-size: large;
+}
+.boat {
+    width: 75%;
+    height: 75%;
+    position:absolute;
+    top: 250%;
+    right: 45%;
+}
+
+.information{
+    width: 75%;
+    height: 75%;
+    position:absolute;
+    top: 600%;
+    right: 45%;
+} */
